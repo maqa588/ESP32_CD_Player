@@ -1,0 +1,63 @@
+set(AIRPLAY2_SRCS
+    "airplay_service.c"
+    "settings.c"
+    "alac_magic_cookie.c"
+    "audio/audio_receiver.c"
+    "audio/audio_stream.c"
+    "audio/audio_stream_realtime.c"
+    "audio/audio_stream_buffered.c"
+    "audio/audio_decoder.c"
+    "audio/audio_buffer.c"
+    "audio/audio_timing.c"
+    "audio/audio_crypto.c"
+    "audio/audio_output.c"
+    "audio/audio_output_common.c"
+    "rtsp/rtsp_server.c"
+    "rtsp/rtsp_conn.c"
+    "rtsp/rtsp_message.c"
+    "rtsp/rtsp_handlers.c"
+    "rtsp/rtsp_fairplay.c"
+    "rtsp/rtsp_crypto.c"
+    "rtsp/rtsp_rsa.c"
+    "rtsp/rtsp_events.c"
+    "plist/plist_xml.c"
+    "plist/bplist_parser.c"
+    "plist/bplist_builder.c"
+    "plist/base64.c"
+    "hap/hap.c"
+    "hap/hap_pair_verify.c"
+    "hap/hap_pair_setup.c"
+    "hap/hap_crypto.c"
+    "hap/srp.c"
+    "hap/tlv8.c"
+    "network/ptp_clock.c"
+    "network/ntp_clock.c"
+    "network/socket_utils.c"
+    "network/mdns_airplay.c"
+)
+
+idf_component_register(
+    SRCS ${AIRPLAY2_SRCS}
+    INCLUDE_DIRS
+        "."
+        "audio"
+        "rtsp"
+        "plist"
+        "hap"
+        "network"
+    REQUIRES
+        esp_wifi
+        esp_netif
+        esp_event
+        nvs_flash
+        lwip
+        espressif__mdns
+        espressif__libsodium
+        espressif__esp_audio_codec
+        mbedtls
+        esp_timer
+        esp_ringbuf
+        myDriver
+        freertos
+        heap
+)

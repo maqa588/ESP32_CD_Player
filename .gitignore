@@ -1,0 +1,51 @@
+# ESP-IDF 编译生成目录与临时文件
+build/
+sdkconfig.old
+sdkconfig.ci
+.cache/
+
+# 固件镜像与预编译工具包
+firmware/
+*.bin
+*.elf
+*.map
+*.zip
+*.tar
+*.tar.gz
+
+# ESP-IDF 组件管理器下载的组件
+managed_components/
+
+# 操作系统临时与索引文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE 与编辑器缓存
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.history/
+.vscode/*.log
+.vscode/.browse.VC.*
+
+# 临时与备份文件
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/

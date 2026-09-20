@@ -1,0 +1,21 @@
+menu "ESP32 AirPlay Configuration"
+
+    config AIRPLAY_WIFI_SSID
+        string "WiFi SSID"
+        default "Your_WiFi_SSID"
+        help
+            SSID of the WiFi Access Point that the ESP32 AirPlay receiver should connect to.
+
+    config AIRPLAY_WIFI_PASSWORD
+        string "WiFi Password"
+        default "Your_WiFi_Password"
+        help
+            Password of the WiFi Access Point.
+
+    config AIRPLAY_DEVICE_NAME
+        string "AirPlay Device Name"
+        default "ESP32-CD-AirPlay"
+        help
+            The name displayed on Apple devices in AirPlay list.
+
+endmenu

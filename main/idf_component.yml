@@ -1,0 +1,9 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: '>=5.0.0'
+  espressif/usb: '*'
+  espressif/mdns: '^1.4.0'
+  espressif/libsodium: "^1.0.21"
+  espressif/esp_audio_codec: "^2.5.0"

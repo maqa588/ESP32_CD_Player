@@ -1,0 +1,19 @@
+{
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "C_Cpp.intelliSenseEngine": "default",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--query-driver=/Volumes/maqassd/.espressif/tools/xtensa-esp-elf/**/bin/xtensa-esp32s3-elf*",
+        "--header-insertion=never",
+        "--background-index"
+    ],
+    "idf.adapterTargetName": "esp32s3",
+    "idf.espIdfPath": "/Volumes/maqassd/.espressif/v6.1/esp-idf",
+    "idf.toolsPath": "/Volumes/maqassd/.espressif",
+    "idf.port": "/dev/tty.usbserial-21220",
+    "idf.flashType": "UART",
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c"
+    }
+}
